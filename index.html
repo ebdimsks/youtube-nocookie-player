@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="inputArea">
+
+        <div class="formSection">
+            <h2>YouTube 動画再生</h2>
+            <input
+                id="videoId"
+                type="text"
+                maxlength="200"
+                placeholder="YouTubeの動画ID または URL"
+            >
+            <button onclick="loadPlayer()">再生</button>
+        </div>
+
+        <div class="formSection">
+            <h2>YouTube 動画検索</h2>
+            <p>
+                Google検索します
+                <br>
+                リンクをコピーして上の入力フォームに貼り付けてください
+            </p>
+            <input
+                id="searchKeyword"
+                type="text"
+                maxlength="200"
+                placeholder="検索キーワード"
+            >
+            <button onclick="searchYoutube()">検索</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
